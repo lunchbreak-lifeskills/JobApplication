@@ -13,11 +13,15 @@
 
   /** this function initiates the code when the page loads and adds event listeners to my buttons */
   function init() {
-    id("bears").addEventListener("click", bears);
-    id("birds").addEventListener("click", birds);
-    id("etc").addEventListener("click", etc);
-    id("reset").addEventListener("click", reset);
+    id("apply").addEventListener("click", apply);
+    // id("birds").addEventListener("click", birds);
+    // id("etc").addEventListener("click", etc);
+    // id("reset").addEventListener("click", reset);
   }
+
+  function apply() {
+    window.location.href = "pageone.html";
+    }
 
   /** this function fetches data from my API for a random bear and then displays it */
   function bears() {
