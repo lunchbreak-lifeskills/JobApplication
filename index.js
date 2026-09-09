@@ -7,68 +7,78 @@
    * HTML for practice job application
    */
 
+  let currentUser = window.localStorage.getItem("username");
+  let currentUserData = window.localStorage.getItem("user");
+  let currentCartData = window.localStorage.getItem("cart");
+
+  console.log("currentUser: " + currentUser);
+  console.log("currentUserData: " + currentUserData);
+  console.log("currentCartData: " + currentCartData); 
+
   window.addEventListener("load", init);
 
   const BASE_URL = "/friend/";
 
   /** this function initiates the code when the page loads and adds event listeners to my buttons */
   function init() {
-    id("apply").addEventListener("click", apply);
-    // id("birds").addEventListener("click", birds);
+    let applyButtons = document.getElementsByClassName("apply");
+
+    for (let i = 0; i < applyButtons.length; i++) {
+        applyButtons[i].addEventListener('click', apply, false);
+    }
+
+    id("two").addEventListener("click", two);
+    id("home").addEventListener("click", home);
     // id("etc").addEventListener("click", etc);
     // id("reset").addEventListener("click", reset);
   }
 
   function apply() {
+    console.log("apply button clicked");
     window.location.href = "pageone.html";
-    }
-
-  /** this function fetches data from my API for a random bear and then displays it */
-  function bears() {
-    fetch(BASE_URL + "bears")
-      .then(statusCheck)
-      .then(resp => resp.json())
-      .then(displayFriend)
-      .catch(console.error);
   }
 
-  /** this function fetches data from my API for a random bird and then displays it */
-  function birds() {
-    fetch(BASE_URL + "birds")
-      .then(statusCheck)
-      .then(resp => resp.json())
-      .then(displayFriend)
-      .catch(console.error);
+  function home() {
+    console.log("home button clicked");
+    window.location.href = "index.html";
   }
+
+  function two() {
+    window.location.href = "pagetwo.html";
+  }
+
+  // function three() {
+  //   window.location.href = "finish.html";
+  // }
 
   /** this function fetches data from my API for a random stuffed toy and then displays it */
-  function etc() {
-    fetch(BASE_URL + "etc")
-      .then(statusCheck)
-      .then(resp => resp.json())
-      .then(displayFriend)
-      .catch(console.error);
-  }
+  // function etc() {
+  //   fetch(BASE_URL + "etc")
+  //     .then(statusCheck)
+  //     .then(resp => resp.json())
+  //     .then(displayFriend)
+  //     .catch(console.error);
+  // }
 
   /**
    * this function adds a friend photo to the page
    * @param {*} param - data from the API
    */
-  function displayFriend(param) {
-    let friend = gen("img");
-    friend.src = param.image;
-    friend.alt = param.alt;
-    if (id("photos").childNodes.length === 0) {
-      id("photos").appendChild(friend);
-    }
-    id("photos").insertBefore(friend, id("photos").firstChild);
-  }
+  // function displayFriend(param) {
+  //   let friend = gen("img");
+  //   friend.src = param.image;
+  //   friend.alt = param.alt;
+  //   if (id("photos").childNodes.length === 0) {
+  //     id("photos").appendChild(friend);
+  //   }
+  //   id("photos").insertBefore(friend, id("photos").firstChild);
+  // }
 
   /** this function removes all the images from the page */
-  function reset() {
-    let all = id("photos");
-    all.innerHTML = "";
-  }
+  // function reset() {
+  //   let all = id("photos");
+  //   all.innerHTML = "";
+  // }
 
   /* ------------------------------ Helper Functions  ------------------------------ */
 
@@ -103,4 +113,16 @@
   function id(id) {
     return document.getElementById(id);
   }
+
+  function cl(selector) {
+    return document.getElementsByClassName(selector);
+  } 
+
+  function qs(selector) {
+    return document.querySelector(selector);
+  }
+
+  function qsa(selector) {
+    return document.querySelectorAll(selector);
+  } 
 })();

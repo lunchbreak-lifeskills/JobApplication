@@ -61,6 +61,23 @@ button:active {
   transform: translateY(4px);
 }
 
+#message, #questions {
+  border: solid;
+  padding: 20px;
+  margin: 30px;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+form {
+  font-size: 30px;
+}
+
 /* #body {
   background-image: url("img/background.jpg");
 }
