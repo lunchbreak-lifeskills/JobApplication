@@ -8,8 +8,9 @@
 -->
 <html lang="en">
   <head>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="index.js"></script>
     <meta charset="utf-8">
@@ -50,6 +51,7 @@
 
     <section id="questions">
       <!-- <h1>THIS IS PAGE ONE</h1> -->
+      <h1>Basic Questions</h1>
       <form id="names" action="" onsubmit="return false">
         <label for="fname">First name:</label><br>
         <!-- <input type="text" id="fname" name="fname"><br> -->
@@ -58,11 +60,39 @@
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" data-field="lname"> <br><br>
 
-        <label for="email">Email:</label><br>
+        <label for="email">Email Address:</label><br>
         <input type="email" id="email" data-field="email"><br><br>
 
-        <label for="phone">Phone:</label><br>
+        <label for="phone">Primary Phone Number:</label><br>
         <input type="tel" id="phone" data-field="phone"><br><br>
+
+        <label for="phoneType">Phone Type:</label><br>
+        <select id="phoneType" data-field="phoneType">
+          <option value="home">Home</option>
+          <option value="work">Work</option>
+          <option value="mobile">Mobile</option>
+        </select><br><br> 
+
+        <label for="send">May we send text messages that pertain to your job application?</label><br>
+        <!-- <select>
+          <option value="">---</option>
+          <option value="">Yes</option>
+          <option value="">No</option>
+        </select><br><br> -->
+
+        <label>
+          <input class="radio" type="radio" name="choice-radio">
+          Yes
+        </label>
+        <label>
+          <input class="radio" type="radio" name="choice-radio">
+          No
+        </label><br><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" data-field="address"><br><br>
+
+
 
           <!-- <input type="submit" value="Submit"> -->
       </form>        
@@ -83,6 +113,11 @@
 
     <button id="home">Home</button><br>
 
+    <!-- <div class="nav-buttons">
+      <a href="index.html" class="btn">Back</a>
+      <a href="review.html" class="btn btn-primary">Continue to review</a>
+    </div> -->
+
 
     <footer>
       <p>Copyright &copy; 2026 Fake Jobs Incorporated</p>
@@ -94,7 +129,7 @@
     <button hidden class="apply"></button><br>
     <button hidden id="two"></button><br>
     <button hidden id="home"></button><br>
-
+    <button hidden id="finish"></button><br>
 
   </body>
 </html>

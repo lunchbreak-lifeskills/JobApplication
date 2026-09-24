@@ -3,9 +3,20 @@
   Date: September 3, 2026
   styling for practice job application
 */
+/* 
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+/* } */
 
 #body {
   padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
 }
 
 h1 {
@@ -38,6 +49,13 @@ p {
   padding-left: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+/* button, .nav-buttons, .btn, .btn btn-primary { */
 button {
   border: none;
   font-size: 30px;
@@ -48,6 +66,7 @@ button {
   background-color: rgb(80, 145, 185);
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 button:hover {
@@ -75,7 +94,7 @@ button:active {
   margin: 20px;
 }
 
-input, textarea {
+input, textarea, select {
   width: 50%;
   height: 30px;
   font-size: 20px;
@@ -89,11 +108,16 @@ form {
   font-size: 30px;
 }
 
-#exp {
-  /* display: flex;
-  flex-direction: column;
-  margin: 20px; */
+.radio {
+  width: 20px;
+  height: 20px;
 }
+
+/* #exp {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+} */
 
 /* #body {
   background-image: url("img/background.jpg");

@@ -29,6 +29,7 @@
 
     id("two").addEventListener("click", two);
     id("home").addEventListener("click", home);
+    id("finish").addEventListener("click", finish);
     // id("etc").addEventListener("click", etc);
     // id("reset").addEventListener("click", reset);
   }
@@ -45,6 +46,10 @@
 
   function two() {
     window.location.href = "pagetwo.html";
+  }
+
+  function finish() {
+    window.location.href = "finish.html";
   }
 
   // function three() {
