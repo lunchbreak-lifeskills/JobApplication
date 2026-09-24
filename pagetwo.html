@@ -22,12 +22,12 @@
       <h3>A Great Place to Work!</h3>
     </header>
 
-    <section id="message">
-      <h2>Thank You for applying for a position at Fake Jobs Incorporated!</h2>
+    <!-- <section id="message"> -->
+      <!-- <h2>Thank You for applying for a position at Fake Jobs Incorporated!</h2>
       <p>
         <b>Department:</b> Fake Counter <br>
         <b>Location:</b> Fake Red Bank, New Jersey <br>
-        <b>Salary:</b> $17.75 Fake Dollars Per Hour
+        <b>Salary:</b> $17.75 Fake Dollars Per Hour -->
       </p>
 
       <!-- <p>We are a fake company that is looking for fake employees. We have a variety of fake jobs available, including:</p>
@@ -37,11 +37,33 @@
         <li>Etc.</li>
       </ul>
       <p>If you are interested in applying for one of our fake jobs, please apply below!</p> -->
-    </section>
+    <!-- </section> -->
 
 
-    <section>
-        <h1>THIS IS PAGE TWO</h1>
+    <section id="questions">
+      <!-- <h1>THIS IS PAGE TWO</h1> -->
+      <h1>Experience</h1>
+      <section id="exp">
+        <form id="experience">
+          <label for="lastRole">Most recent job title</label><br>
+          <input type="text" id="lastRole" data-field="lastRole"/><br><br>
+
+          <label for="lastEmployer">Employer</label><br>
+          <input type="text" id="lastEmployer" data-field="lastEmployer" /><br><br>
+
+          <label for="coverLetter">Why do you want this role?</label><br>
+          <textarea id="coverLetter" data-field="coverLetter"></textarea><br><br>
+
+          <label for="resumeUpload">Resume</label><br>
+          <input type="file" id="resumeUpload" data-field="resume" accept=".pdf,.doc,.docx" /><br>
+          <div class="file-preview" data-file-preview="resume"></div><br>
+
+          <label for="coverLetterUpload">Cover letter (optional)</label><br>
+          <input type="file" id="coverLetterUpload" data-field="coverLetterFile" accept=".pdf,.doc,.docx" /><br>
+          <div class="file-preview" data-file-preview="coverLetterFile"></div><br>
+          
+        </form>
+      </section>
     </section>
 
     <section id="buttons">

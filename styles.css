@@ -64,6 +64,7 @@ button:active {
 #message, #questions {
   border: solid;
   padding: 20px;
+  padding-left: 40px;
   margin: 30px;
 }
 
@@ -74,8 +75,24 @@ button:active {
   margin: 20px;
 }
 
+input, textarea {
+  width: 50%;
+  height: 30px;
+  font-size: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
 form {
   font-size: 30px;
+}
+
+#exp {
+  /* display: flex;
+  flex-direction: column;
+  margin: 20px; */
 }
 
 /* #body {
