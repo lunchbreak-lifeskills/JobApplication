@@ -46,17 +46,17 @@
       <h1>Experience</h1>
       <section id="exp">
         <form id="experience">
-          <label for="lastRole">Most recent job title</label><br>
-          <input type="text" id="lastRole" data-field="lastRole"/><br><br>
+          <label for="lastRole">Most recent job title <span class="red">*</span></label><br>
+          <input type="text" id="lastRole" data-field="lastRole" required /><br><br>
 
-          <label for="lastEmployer">Employer</label><br>
-          <input type="text" id="lastEmployer" data-field="lastEmployer" /><br><br>
+          <label for="lastEmployer">Employer <span class="red">*</span></label><br>
+          <input type="text" id="lastEmployer" data-field="lastEmployer" required /><br><br>
 
-          <label for="coverLetter">Why do you want this role?</label><br>
-          <textarea id="coverLetter" data-field="coverLetter"></textarea><br><br>
+          <label for="coverLetter">Why do you want this role? <span class="red">*</span></label><br>
+          <textarea id="coverLetter" data-field="coverLetter" required></textarea><br><br>
 
-          <label for="resumeUpload">Resume</label><br>
-          <input type="file" id="resumeUpload" data-field="resume" accept=".pdf,.doc,.docx" /><br>
+          <label for="resumeUpload">Resume <span class="red">*</span></label><br>
+          <input type="file" id="resumeUpload" data-field="resume" accept=".pdf,.doc,.docx" required /><br>
           <div class="file-preview" data-file-preview="resume"></div><br>
 
           <label for="coverLetterUpload">Cover letter (optional)</label><br>
