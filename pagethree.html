@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+  Name: Robin Luo
+  Date: September 3, 2026
+  HTML for practice job application
+  
+    ** ELIGIBILITY PAGE **
+
+  Fake Jobs Incorporated
+-->
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link rel="icon" type="image/ico" href="/images/test.ico">
+    
+    <meta charset="utf-8">
+    <title>Fake Jobs Incorporated</title>
+  </head>
+  <body id="body">
+
+    <header id="header">
+      <h1>Fake Jobs Incorporated</h1>
+      <h3>A Great Place to Work!</h3>
+    </header>
+
+    <section id="message">
+      <p>
+        <b>Department:</b> Fake Counter <br>
+        <b>Location:</b> Fake Red Bank, New Jersey <br>
+        <b>Salary:</b> $17.75 Fake Dollars Per Hour
+      </p>
+    </section>
+
+    <section id="questions">
+      <!-- <h1>THIS IS PAGE THREE</h1> -->
+       <h1>Eligibility</h1>
+
+      <form id="eligibility" action="" onsubmit="return false">
+        <label for="eighteen">Are you 18 years or older?<span class="red">*</span></label><br>
+        <select id="legal" class="drop" data-field="legal" required>
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br> 
+
+        <label for="legal">Are you legally authorized to work in the United States?<span class="red">*</span></label><br>
+        <select id="legal" class="drop" data-field="legal" required>
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br> 
+        
+        <label for="hours">Enter how many hours per week you desire to work<span class="red">*</span></label><br>
+        <input type="number" id="hours" class="box" data-field="hours" pattern="[0-9]{2}" required/><br><br>
+
+        <label for="hired">If hired, would you be able to start immediately?<span class="red">*</span></label><br>
+        <select id="hired" class="drop" data-field="hired" required>
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br> 
+        
+        <label for="when">If no, when would you be able to start?</label><br>
+        <p style="margin: 0px; font-style: italic;">(mm/dd/yyyy)</p>
+        <input type="date" id="when" class="box" data-field="when"/><br><br>
+
+        <label for="salary">What is your desired salary?<span class="red">*</span></label><br>
+        <p style="margin: 0px; font-style: italic;">$  Per Hour</p>
+        <input type="number" id="salary" class="box" data-field="salary" pattern="[0-9]{2}" required/><br><br>
+
+        <label for="applied">Have you ever applied to this company before?<span class="red">*</span></label><br>
+        <select id="applied" class="drop" data-field="applied" required>
+            <option value="">Select an option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="appwhen">If so, when?</label><br>
+        <p style="margin: 0px; font-style: italic;">(mm/dd/yyyy)</p>
+        <input type="date" id="appwhen" class="box" data-field="appwhen"/><br><br>
+
+        <input type="submit" value="Check This Page (continue if you see no errors)" class="smallButton">
+
+      </form>
+
+
+      <!-- <form id="experience">
+        <label for="lastRole">Most recent job title<span class="red">*</span></label><br>
+        <input type="text" id="lastRole" class="box" data-field="lastRole" required/><br><br>
+
+        <label for="lastEmployer">Employer<span class="red">*</span></label><br>
+        <input type="text" id="lastEmployer" class="box" data-field="lastEmployer" required /><br><br>
+
+        <label for="why">Why do you want this role?<span class="red">*</span></label><br>
+        <textarea id="why" class="box" data-field="why" style="height:70px" required></textarea><br><br>
+        
+        <input type="submit" value="Check This Page (continue if you see no errors)" class="smallButton">
+
+      </form> -->
+    </section>
+
+    <section id="buttons">
+        <button id="two">Back</button><br>
+        <button id="four">Continue</button><br>
+    </section>
+
+    <br><hr>
+
+    <br>
+
+    <button id="home">Home</button><br>
+
+    <footer>
+      <p>Copyright &copy; 2026 Fake Jobs Incorporated</p>
+      <p>Fake Jobs Incorporated is excited about our fake future together! We look forward to recieving your fake application!</p>
+    </footer>
+
+        <!-- hidden buttons for initializing -->
+    <button hidden class="apply"></button><br>
+    <button hidden id="two"></button><br>
+    <button hidden id="home"></button><br>
+    <button hidden id="three"></button><br>
+    <button hidden id="four"></button><br>
+    <button hidden id="five"></button><br>
+    <button hidden id="six"></button><br>
+    <button hidden id="finish"></button><br>
+  </body>
+</html>

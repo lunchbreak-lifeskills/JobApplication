@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+  Name: Robin Luo
+  Date: September 3, 2026
+  HTML for practice job application
+  
+  ** BASIC INFORMATION PAGE **
+  
+  Fake Jobs Incorporated
+-->
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link rel="icon" type="image/ico" href="/images/test.ico">
+    <meta charset="utf-8">
+    <title>Fake Jobs Incorporated</title>
+  </head>
+  <body id="body">
+
+    <header id="header">
+      <h1>Fake Jobs Incorporated</h1>
+      <h3>A Great Place to Work!</h3>
+    </header>
+
+    <section id="message">
+      <h2>Thank You for applying for a position at Fake Jobs Incorporated!</h2>
+      <p>
+        Fake Jobs Incorporated will provide equal fake employment opportunities to all fake applicants without regard to any applicant's fake status protected by federal or state law. <br>
+        The Company will provide reasonable fake accommodations if so requested.
+        This application is considered current for sixty (60) fake days only.
+        At the end of this period, if you are still interested in employment, it will be necessary for you to reapply by completing a new fake application.
+        <br><br>
+        <b>This application does not create a contract of employment.</b><br>
+        <b>This fake application does not guarantee employment with Fake Jobs Incorporated.</b><br>
+        <b>This application is not real.</b>
+      </p>
+
+      <!-- <p>We are a fake company that is looking for fake employees. We have a variety of fake jobs available, including:</p>
+      <ul>
+        <li>Bear Wrangler</li>
+        <li>Bird Watcher</li>
+        <li>Etc.</li>
+      </ul>
+      <p>If you are interested in applying for one of our fake jobs, please apply below!</p> -->
+    </section>
+
+    <section id="questions">
+        <!-- <h1>THIS IS PAGE ONE</h1> -->
+         <h1>Basic Information</h1>
+         <h3>Note: This application is just for practice! Please don't worry about making your responses detailed.</h3>
+
+
+          <form id="names" action="" onsubmit="return false">
+          <!-- <form id="names"> -->
+            <label for="fname">First Name:<span class="red">*</span></label><br>
+            <input type="text" id="fname" class="box" data-field="fname" required><br><br>
+            <!-- <input type="text" id="fname" name="fname"><br> -->
+
+            <label for="lname">Last Name:<span class="red">*</span></label><br>
+            <input type="text" id="lname" class="box" data-field="lname" required> <br><br>
+
+            <label for="address">Address Line 1:<span class="red">*</span></label><br>
+            <input type="text" id="addr" class="box" data-field="address1" required> <br><br>
+
+            <label for="address">Address Line 2:</label><br>
+            <input type="text" id="addr2" class="box" data-field="address2"> <br><br>
+
+            <label for="address">City:<span class="red">*</span></label><br>
+            <input type="text" id="city" class="box" data-field="city" required> <br><br>
+
+            <label for="address">State:<span class="red">*</span></label><br>
+            <input type="text" id="state" class="box" data-field="state" required> <br><br>
+            
+            <label for="address">Zip Code:<span class="red">*</span></label><br>
+            <p style="margin: 0px; font-style: italic;">(55555)</p>
+            <input type="number" id="zip" class="box" data-field="zip" pattern="[0-9]{5}" required> <br><br>
+
+            <label for="email">Email:<span class="red">*</span></label><br>
+            <input type="email" id="email" class="box" data-field="email" autocomplete="off" required><br><br>
+
+            <label for="phoneType">Phone Type:<span class="red">*</span></label><br>
+            <select id="phoneType" class="drop" data-field="phoneType">
+              <option value="">Select an option</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+              <option value="mobile">Mobile</option>
+            </select><br><br> 
+
+            <label for="send">May we send text messages that pertain to your job application?<span class="red">*</span></label><br>
+            <p style="margin: 0px; font-style: italic;">(but not really)</p>
+
+
+            <select id="texts" class="drop" data-field="texts">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select><br><br> 
+
+            <label for="phone">Phone:<span class="red">*</span></label>
+            <p style="margin: 0px; font-style: italic;">(555-555-5555)</p>
+            <input type="tel" id="phone" class="box" data-field="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" autocomplete="off" required><br><br>
+
+            <input type="submit" value="Check This Page (continue if you see no errors)" class="smallButton">
+        </form>
+    </section>
+
+    <hr><br>
+
+    <button id="two">Continue</button><br>
+
+    <br><hr>
+
+    <br>
+
+    <button id="home">Home</button><br>
+
+    <footer>
+      <p>Copyright &copy; 2026 Fake Jobs Incorporated</p>
+      <p>Fake Jobs Incorporated is excited about our fake future together! We look forward to recieving your fake application!</p>
+    </footer>
+
+        <!-- hidden buttons for initializing -->
+    <button hidden class="apply"></button><br>
+    <button hidden id="two"></button><br>
+    <button hidden id="home"></button><br>
+    <button hidden id="three"></button><br>
+    <button hidden id="four"></button><br>
+    <button hidden id="five"></button><br>
+    <button hidden id="six"></button><br>
+    <button hidden id="finish"></button><br>
+
+  </body>
+</html>
