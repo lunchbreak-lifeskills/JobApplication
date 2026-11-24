@@ -41,20 +41,52 @@
        <h1>References</h1>
 
       <form id="references" action="" onsubmit="return false">
-Reference #1 Name
-Address
-Phone (555-555-5555)
-Business
-Years Acquainted
-        <!-- <label for="lastRole">Most recent job title<span class="red">*</span></label><br>
-        <input type="text" id="lastRole" class="box" data-field="lastRole" required/><br><br>
-
-        <label for="lastEmployer">Employer<span class="red">*</span></label><br>
-        <input type="text" id="lastEmployer" class="box" data-field="lastEmployer" required /><br><br>
-
-        <label for="why">Why do you want this role?<span class="red">*</span></label><br>
-        <textarea id="why" class="box" data-field="why" style="height:70px" required></textarea><br><br> -->
+        <div class="role">
+          <label for="refOne">Reference #1 Name<span class="red">*</span></label><br>
+          <input type="text" id="refOne" class="box" data-field="refOne" required/><br><br>
         
+          <label for="relOne">Relationship<span class="red">*</span></label><br>
+          <textarea id="relOne" class="box" data-field="relOne" required></textarea><br><br>
+
+          <label for="refPhoneOne">Phone<span class="red">*</span></label><br>
+          <input type="number" id="refPhoneOne" class="box" data-field="refPhoneOne" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br><br>
+
+          <label for="refYearsOne">Years Acquainted<span class="red">*</span></label><br>
+          <input type="number" id="refYearsOne" class="box" data-field="refYearsOne" required/><br><br>
+        </div>
+
+        <br>
+
+        <div class="role">
+          <label for="refTwo">Reference #2 Name<span class="red">*</span></label><br>
+          <input type="text" id="refTwo" class="box" data-field="refTwo" required/><br><br>
+        
+          <label for="relTwo">Relationship<span class="red">*</span></label><br>
+          <textarea id="relTwo" class="box" data-field="relTwo" required></textarea><br><br>
+
+          <label for="refPhoneTwo">Phone<span class="red">*</span></label><br>
+          <input type="number" id="refPhoneTwo" class="box" data-field="refPhoneTwo" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br><br>
+
+          <label for="refYearsTwo">Years Acquainted<span class="red">*</span></label><br>
+          <input type="number" id="refYearsTwo" class="box" data-field="refYearsTwo" required/><br><br>
+        </div>
+
+        <br>
+
+        <div class="role">
+          <label for="refThree">Reference #3 Name<span class="red">*</span></label><br>
+          <input type="text" id="refThree" class="box" data-field="refThree" required/><br><br>
+        
+          <label for="relThree">Relationship<span class="red">*</span></label><br>
+          <textarea id="relThree" class="box" data-field="relThree" required></textarea><br><br>
+
+          <label for="refPhoneThree">Phone<span class="red">*</span></label><br>
+          <input type="number" id="refPhoneThree" class="box" data-field="refPhoneThree" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br><br>
+
+          <label for="refYearsThree">Years Acquainted<span class="red">*</span></label><br>
+          <input type="number" id="refYearsThree" class="box" data-field="refYearsThree" required/><br><br>
+        </div>
+        <br>
         <input type="submit" value="Check This Page (continue if you see no errors)" class="smallButton">
 
       </form>
