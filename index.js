@@ -7,13 +7,6 @@
    * HTML for practice job application
    */
 
-  // let currentUser = window.localStorage.getItem("username");
-  // let currentUserData = window.localStorage.getItem("user");
-  // let currentCartData = window.localStorage.getItem("cart");
-  // console.log("currentUser: " + currentUser);
-  // console.log("currentUserData: " + currentUserData);
-  // console.log("currentCartData: " + currentCartData);
-
   window.addEventListener("load", init);
   window.addEventListener('beforeunload', saveFields);
   document.addEventListener('DOMContentLoaded', () => {
@@ -196,16 +189,6 @@
   function clearStoredData() {
     sessionStorage.removeItem(STORAGE_KEY);
   }
-
-  // Source - https://stackoverflow.com/a/44395208
-  // function handleSubmit(event) {
-  //   console.log("asdfasf");
-  //   // if(!validate()) {
-  //     event.preventDefault();
-  //   // }
-  //   return;
-  // }
-
 
   /* ------------------------------ Helper Functions  ------------------------------ */
 

@@ -42,27 +42,56 @@
 
       <form id="experience">
         <div class="role">
-          <label for="roleOne">Job One<span class="red">*</span></label><br>
+          <label for="roleOne">Job One - Position<span class="red">*</span></label><br>
           <input type="text" id="roleOne" class="box" data-field="roleOne" required/><br><br>
 
-          <label for="lastEmployer">Employer<span class="red">*</span></label><br>
-          <input type="text" id="lastEmployer" class="box" data-field="lastEmployer" required /><br><br>
+          <label for="roleOneCompany">Company<span class="red">*</span></label><br>
+          <input type="text" id="roleOneCompany" class="box" data-field="roleOneCompany" required /><br><br>
+          
+          <label for="roleOneAddress">Address<span class="red">*</span></label><br>
+          <input type="text" id="roleOneAddress" class="box" data-field="roleOneAddress" required /><br><br>
+
+          <label for="roleOnePhone">Phone<span class="red">*</span></label><br>
+          <input type="number" id="roleOnePhone" class="box" data-field="roleOnePhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br><br>
+
+          <label for="roleOneStart">Start Date<span class="red">*</span></label><br>
+          <input type="date" id="roleOneStart" class="box" data-field="roleOneStart" required /><br><br>
+          
+          <label for="roleOneEnd">End Date<span class="red">*</span></label><br>
+          <input type="date" id="roleOneEnd" class="box" data-field="roleOneEnd" required /><br><br>
+
         </div>
 
         <br>
 
         <div class="role">
-          <label for="roleTwo">Job Two</label><br>
+          <label for="roleTwo">Job Two - Position</label><br>
           <input type="text" id="roleTwo" class="box" data-field="roleTwo"/><br><br>
 
-          <label for="previousEmployer">Employer</span></label><br>
-          <input type="text" id="previousEmployer" class="box" data-field="previousEmployer"/><br><br>
+          <label for="roleTwoCompany">Company</span></label><br>
+          <input type="text" id="roleTwoCompany" class="box" data-field="roleTwoCompany"/><br><br>
+
+          <label for="roleTwoAddress">Address</label><br>
+          <input type="text" id="roleTwoAddress" class="box" data-field="roleTwoAddress"/><br><br>
+
+          <label for="roleTwoPhone">Phone</label><br>
+          <input type="number" id="roleTwoPhone" class="box" data-field="roleTwoPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/><br><br>
+
+          <label for="roleTwoStart">Start Date</label><br>
+          <input type="date" id="roleTwoStart" class="box" data-field="roleTwoStart"/><br><br>
+          
+          <label for="roleTwoEnd">End Date</label><br>
+          <input type="date" id="roleTwoEnd" class="box" data-field="roleTwoEnd"/><br><br>
         </div>
 
         <br>
         
         <div class="role">
-        Volunteer Experience (if applicable)
+        
+
+          <label for="volunteer">Volunteer Experience (if applicable)</label><br>
+          <textarea id="volunteer" class="box" data-field="volunteer" style="height:70px"></textarea><br><br>
+
         </div>
 
         <br>
