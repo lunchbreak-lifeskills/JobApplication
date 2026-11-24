@@ -40,33 +40,61 @@
       <!-- <h1>THIS IS PAGE FIVE</h1> -->
        <h1>Education and Training</h1>
 
-      <form id="experience">
-        <label for="lastRole">Most recent job title<span class="red">*</span></label><br>
-        <input type="text" id="lastRole" class="box" data-field="lastRole" required/><br><br>
+      <form id="education" action="" onsubmit="return false">
+        <div class="role">
+          <label for="hs">High School Name<span class="red">*</span></label><br>
+          <input type="text" id="hs" class="box" data-field="hs" required/><br><br>
+        
+          <label for="hsLocation">High School Location: City, State<span class="red">*</span></label><br>
+          <input type="text" id="hsLocation" class="box" data-field="hsLocation" required/><br><br>
+          
+          <label for="hsDegree">Degree or GED?<span class="red">*</span></label><br>
+          
+          <select id="hsDegree" class="drop" data-field="hsDegree" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select><br><br> 
+        </div>
+        
+        <br>
 
+        <div class="role">
+          <label for="collegeOne">College or Other Institution Name</label><br>
+          <input type="text" id="collegeOne" class="box" data-field="collegeOne"/><br><br>
+        
+          <label for="collegeOneLocation">Location: City, State</label><br>
+          <input type="text" id="collegeOneLocation" class="box" data-field="collegeOneLocation"/><br><br>
+          
+          <label for="collegeOneYears">Years Attended</label><br>
+          <input type="number" id="collegeOneYears" class="box" data-field  ="collegeOneYears"/><br><br>
 
-High School Name
-High School Location: City, State
-Degree or GED?
+          <label for="collegeOneDegree">Degree</label><br>
+          <input type="text" id="collegeOneDegree" class="box" data-field="collegeOneDegree"/><br><br>
+        </div>
 
-<br>
+        <br>
 
-College or Other Institution Name
-Location: City, State
-# of years attended
-Degree
-<br>
+        <div class="role">
+          <label for="collegeTwo">College or Other Program Name</label><br>
+          <input type="text" id="collegeTwo" class="box" data-field="collegeTwo"/><br><br>
+        
+          <label for="collegeTwoLocation">Location: City, State</label><br>
+          <input type="text" id="collegeTwoLocation" class="box" data-field="collegeTwoLocation"/><br><br>
+          
+          <label for="collegeTwoYears">Years Attended</label><br>
+          <input type="number" id="collegeTwoYears" class="box" data-field  ="collegeTwoYears"/><br><br>
 
-Graduate School Name
-Graduate School Location: City, State
-# of years attended
-Degree
-<br>
+          <label for="collegeTwoDegree">Degree or Certificate</label><br>
+          <input type="text" id="collegeTwoDegree" class="box" data-field="collegeTwoDegree"/><br><br>
+        </div>
 
-Are you a U.S. Military Veteran?
-Yes/No
-
-
+        <div class="role">  
+          <label for="veteran">Are you a U.S. Military Veteran?<span class="red">*</span></label><br>
+          <select id="veteran" class="drop" data-field="veteran" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select><br><br> 
+        </div>
         
         <input type="submit" value="Check This Page (continue if you see no errors)" class="smallButton">
 
