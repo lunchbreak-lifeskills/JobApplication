@@ -38,9 +38,19 @@
 
     <section id="questions">
       <!-- <h1>THIS IS PAGE SIX</h1> -->
-       <h1>References</h1>
+      <h1>References</h1>
 
       <form id="references" action="" onsubmit="return false">
+        
+        <div class="role">
+          <h2>Referral Letter (Optional)</h2>
+          <label for="resumeUpload" class="smallButton">Choose File</label><br>
+          <input type="file" id="resumeUpload" data-field="resume" accept=".pdf,.doc,.docx" style="display:none;"/><br>
+          <div class="file-preview" data-file-preview="resume"></div>
+        </div> 
+
+        <br>
+        
         <div class="role">
           <label for="refOne">Reference #1 Name<span class="red">*</span></label><br>
           <input type="text" id="refOne" class="box" data-field="refOne" required/><br><br>
